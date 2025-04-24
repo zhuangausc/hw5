@@ -25,8 +25,10 @@ int main(int argc, char* argv[])
     }
     std::set<string> answers;
     answers = wordle(in, floatingChars, dict);
+    //cout << "Before answers" << endl;
     for(auto s : answers){
         cout << s << endl;
     }
+    //cout << "After answers" << endl;
     return 0;
 }
